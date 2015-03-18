@@ -1,6 +1,6 @@
-# AdRx Quick Notes
+# React Boilerplate
 
-Quick Notes functionality for Indiana University AdRx (Advising Records) system.
+Boilerplate code for a [React](http://facebook.github.io/react/) project with a [Reflux](https://github.com/spoike/refluxjs) architecture.
 
 ## Installation
 
