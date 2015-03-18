@@ -1,0 +1,39 @@
+.qn-App {
+  .textShadow();
+  border: unit(1/16, em) solid @color-Border;
+  color: @color-Text--900;
+  line-height: 1;
+  // Fixes for specificity issues.
+  font-size: 16px;
+
+  ::selection {
+    background-color: @color-Interactive--150;
+  }
+
+  &-error {
+    border-top: unit(1/16, em) solid @color-Border;
+    padding: 0 1em;
+  }
+
+  &-empty {
+    background-color: @color-Base--150;
+    margin: 0;
+    padding: 1em 0;
+    text-align: center;
+  }
+
+  &-body {
+    border-top: unit(1/16, em) solid @color-Border;
+    display: flex;
+  }
+
+  &-nav {
+    min-width: 12em;
+  }
+
+  &-content {
+    border-left: unit(1/16, em) solid @color-Border;
+    flex: 1;
+    max-width: 40em;
+  }
+}

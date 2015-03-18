@@ -1,0 +1,36 @@
+{
+  "superheroes": [
+    {
+      "name": "Batman",
+      "identity": "Bruce Wayne",
+      "location": "Gotham",
+      "abilities": [
+        "money",
+        "martial arts",
+        "batarangs"
+      ]
+    },
+    {
+      "name": "Hulk",
+      "identity": "Bruce Banner",
+      "location": "unknown",
+      "abilities": [
+        "rage",
+        "strongest alive",
+        "durability"
+      ]
+    },
+    {
+      "name": "Spider-Man",
+      "identity": "Peter Parker",
+      "location": "New York City",
+      "abilities": [
+        "agility",
+        "spider sense",
+        "webbing",
+        "super strength",
+        "being late to class"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,14 @@
+// Typographical scales
+@scale-MinorThird: 6/5;
+
+@scale-FontSize: @scale-MinorThird;
+// Shrinking scale (inverse)
+@scale-FontSize--10i: percentage(1/@scale-FontSize);
+@scale-FontSize--05i: percentage(1/pow(@scale-FontSize, 0.5));
+// Identity
+@scale-FontSize--00: 100%;
+// Growing scale
+@scale-FontSize--05: percentage(pow(@scale-FontSize, 0.5));
+@scale-FontSize--10: percentage(@scale-FontSize);
+@scale-FontSize--15: percentage(pow(@scale-FontSize, 1.5));
+@scale-FontSize--20: percentage(pow(@scale-FontSize, 2));

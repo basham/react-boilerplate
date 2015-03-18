@@ -1,0 +1,36 @@
+.focus() {
+  box-shadow: 0 0 0 unit(1/16, em) @color-White, 0 0 0 unit(3/16, em) @color-Interactive--150;
+  outline: none;
+}
+
+.screenReadersOnly() {
+  left: -9999em;
+  position: absolute;
+}
+
+// Google Material Design shadows.
+// https://medium.com/@Florian/freebie-google-material-design-shadow-helper-2a0501295a2d
+.shadow(@level: 4){
+  & when (@level = 0) {
+    box-shadow: none;
+  }
+  & when (@level = 1) {
+    box-shadow: 0 unit(1/16, em) unit(3/16, em) rgba(0,0,0,0.12), 0 unit(1/16, em) unit(2/16, em) rgba(0,0,0,0.24);
+  }
+  & when (@level = 2) {
+    box-shadow: 0 unit(3/16, em) unit(6/16, em) rgba(0,0,0,0.16), 0 unit(3/16, em) unit(6/16, em) rgba(0,0,0,0.23);
+  }
+  & when (@level = 3) {
+    box-shadow: 0 unit(10/16, em) unit(20/16, em) rgba(0,0,0,0.19), 0 unit(6/16, em) unit(6/16, em) rgba(0,0,0,0.23);
+  }
+  & when (@level = 4) {
+    box-shadow: 0 unit(14/16, em) unit(28/16, em) rgba(0,0,0,0.25), 0 unit(10/16, em) unit(30/16, em) rgba(0,0,0,0.22);
+  }
+  & when (@level = 5) {
+    box-shadow: 0 unit(19/16, em) unit(38/16, em) rgba(0,0,0,0.30), 0 unit(15/16, em) unit(12/16, em) rgba(0,0,0,0.22);
+  }
+}
+
+.textShadow(@color: @color-White) {
+  text-shadow: 0 unit(1/16, em) 0 @color;
+}
